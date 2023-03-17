@@ -1,7 +1,7 @@
-DROP DATABASE worldcuptest;
-CREATE DATABASE worldcuptest;
-ALTER DATABASE worldcuptest OWNER TO postgres;
-\connect worldcuptest
+DROP DATABASE worldcup;
+CREATE DATABASE worldcup;
+ALTER DATABASE worldcup OWNER TO postgres;
+\connect worldcup
 CREATE TABLE teams(
   team_id serial PRIMARY KEY,
   name varchar(20) UNIQUE NOT NULL
